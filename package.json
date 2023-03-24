@@ -1,5 +1,5 @@
 {
-  "name": "four-in-a-row",
+  "name": "Four-in-a-row",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -37,5 +37,5 @@
   "devDependencies": {
     "gh-pages": "^5.0.0"
   },
-  "homepage": "http://tarekeee.github.io/four-in-a-row"
+  "homepage": "http://tarekeee.github.io/Four-in-a-row"
 }
