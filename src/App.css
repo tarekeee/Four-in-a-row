@@ -1,0 +1,115 @@
+:root {
+  --square-size: 60px;
+  --board-width: calc(var(--square-size) * 10) + 1;
+  --board-height: calc(var(--square-size) * 6) + 1;
+  --before-visible: none;
+  --current-player: #77834d;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+}
+
+.Board {
+  height: var(--board-height);
+  width: var(--board-width);
+  padding: 10px;
+  overflow: visible;
+  position: relative;
+  flex-wrap: wrap;
+}
+.Square {
+  width: var(--square-size) !important;
+  aspect-ratio: 1/1;
+}
+.Board-Col::before {
+  content: "";
+  width: var(--square-size);
+  aspect-ratio: 1/1;
+  background-color: var(--current-player);
+  position: absolute;
+  top: calc(var(--square-size) * -1 - 10px);
+  display: var(--before-visible);
+  border-radius: 50%;
+  border: #1f2027 solid 1px;
+}
+.Reset {
+  writing-mode: sideways-rl;
+  text-orientation: sideways;
+  width: 60px;
+  font-size: 20px !important;
+  letter-spacing: 2px;
+  height: 310px;
+}
+#misc {
+  margin-left: 10px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+#current {
+  margin-top: 10px;
+}
+#logo {
+  width: 50px;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  height: 50px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+#Attributes {
+  position: absolute;
+  z-index: 99;
+  right: 170px;
+  top: 140px;
+  width: fit-content;
+  border: #1f2027 1px solid;
+  border-radius: 10px;
+  box-sizing: content-box;
+  padding: 5px;
+}
+#att {
+  font-size: 2em;
+}
+.App {
+  position: relative;
+}
+@media only screen and (max-width: 600px) {
+  :root {
+    --square-size: 35px;
+  }
+  #Attributes {
+    right: 20px;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  :root {
+    --square-size: 50px;
+  }
+  #att {
+    font-size: 30px !important;
+  }
+  #Attributes {
+    top: 120px;
+    right: 25% !important;
+  }
+  #misc {
+    margin-left: 10px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  #current {
+    margin-top: 10px;
+  }
+  .Reset {
+    height: 260px;
+    width: 50px;
+  }
+}

@@ -1,0 +1,21 @@
+$theme-colors: (
+  "primary": #8f8fa3,
+  "light": #f3f6f5,
+  "dark": #5a4081,
+  "secondary": #e0ba4e,
+  "info": #5a4081,
+  "success": #60a569,
+  "warning": #dd9531,
+  "danger": #f44336
+);
+@import "../node_modules/bootstrap/scss/bootstrap";
+// $theme-colors: (
+//   "primary": #8f8fa3,
+//   "light": #f3f6f5,
+//   "dark": #5a4081,
+//   "secondary": #e0ba4e,
+//   "info": #5a4081,
+//   "success": #60a569,
+//   "warning": #dd9531,
+//   "danger": #f44336
+// );
