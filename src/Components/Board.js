@@ -79,7 +79,7 @@ function Board(props) {
   };
   const handleHoverEnter = (col) => {
     console.log("#Col" + col.toString() + "::before");
-    if (BoardHandler[col][0].state === noOne) {
+    if (BoardHandler[col][0].state === noOne && (! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Mobile|mobile|CriOS/i.test(window.navigator.userAgent))) {
     const beforeSelectorRule =
       "#Col" +
       col.toString() +
