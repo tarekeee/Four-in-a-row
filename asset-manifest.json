@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/Four-in-a-row/static/css/main.5d7b3bee.css",
-    "main.js": "/Four-in-a-row/static/js/main.bd898c05.js",
+    "main.css": "/Four-in-a-row/static/css/main.f399c504.css",
+    "main.js": "/Four-in-a-row/static/js/main.06e5dd14.js",
     "static/js/787.80f3343c.chunk.js": "/Four-in-a-row/static/js/787.80f3343c.chunk.js",
+    "static/media/FORAGER - FULL OST - COMPLETE SOUNDTRACK [TubeRipper.com].webm": "/Four-in-a-row/static/media/FORAGER - FULL OST - COMPLETE SOUNDTRACK [TubeRipper.com].e11debc4a6166c1b75df.webm",
     "static/media/MainLogo.svg": "/Four-in-a-row/static/media/MainLogo.14afe09c0651d43dab3c3f4547f6b808.svg",
     "index.html": "/Four-in-a-row/index.html",
-    "main.5d7b3bee.css.map": "/Four-in-a-row/static/css/main.5d7b3bee.css.map",
-    "main.bd898c05.js.map": "/Four-in-a-row/static/js/main.bd898c05.js.map",
+    "main.f399c504.css.map": "/Four-in-a-row/static/css/main.f399c504.css.map",
+    "main.06e5dd14.js.map": "/Four-in-a-row/static/js/main.06e5dd14.js.map",
     "787.80f3343c.chunk.js.map": "/Four-in-a-row/static/js/787.80f3343c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5d7b3bee.css",
-    "static/js/main.bd898c05.js"
+    "static/css/main.f399c504.css",
+    "static/js/main.06e5dd14.js"
   ]
 }
