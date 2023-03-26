@@ -1,16 +1,16 @@
 import React from 'react';
 import { ReactComponent as Logo } from "./MainLogo.svg";
-
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+window.addEventListener("orientationchange", (event) => {window.location.reload()});
+ScreenOrientation.onchange = () => {window.location.reload()};
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
-    <Logo fill="#8f8fa3" id="logo" />
+    <Logo fill="#efefee" id="logo" />
 
   </React.StrictMode>
 );

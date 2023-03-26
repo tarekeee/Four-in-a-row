@@ -1,9 +1,9 @@
 :root {
-  --square-size: 60px;
+  --square-size: 65px;
   --board-width: calc(var(--square-size) * 10) + 1;
   --board-height: calc(var(--square-size) * 6) + 1;
   --before-visible: none;
-  --current-player: #77834d;
+  --current-player: #36e7f4;
 }
 
 body {
@@ -37,21 +37,26 @@ body {
   border: #1f2027 solid 1px;
 }
 .Reset {
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-  width: 60px;
+  width: 560px;
   font-size: 20px !important;
   letter-spacing: 1px;
-  height: 310px;
+  height: 70px;
+  margin-top: 10px;
+  border-radius: 10px !important;
+}
+#ResetT {
+  font-size: 1.5em;
+  letter-spacing: 2px;
 }
 #misc {
-  margin-left: 10px;
   padding: 0;
-  display: flex;
-  flex-direction: column;
 }
 #current {
   margin-top: 10px;
+  display: inline-block;
+  float: right;
+  width: var(--square-size) !important;
+  aspect-ratio: 1/1;
 }
 #logo {
   width: 50px;
@@ -59,14 +64,15 @@ body {
   padding: 0;
   margin: 0;
   height: 50px;
-  position: absolute;
+  position: fixed;
   right: 0;
   bottom: 0;
 }
 #Attributes {
+  display: none;
   position: absolute;
   z-index: 99;
-  right: 170px;
+  right: 165px;
   top: 140px;
   width: fit-content;
   border: #1f2027 1px solid;
@@ -80,15 +86,36 @@ body {
 .App {
   position: relative;
 }
-@media only screen and (max-width: 600px) {
-  :root {
-    --square-size: 35px;
-  }
-  #Attributes {
-    right: 20px;
-  }
+.Stats .Square {
+  width: calc(var(--square-size)*(3/4)) !important;
 }
-@media only screen and (max-width: 1300px) {
+.Stats {
+  height: 200px;
+  margin-top: 10px;
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  margin-bottom: 60px;
+  align-self: center;
+}
+#firstStat {
+  margin-top: 10px;
+  margin-bottom: -1px;
+}
+#secondStat {
+  margin-bottom: 10px;
+}
+#secondStat h2{
+  margin-bottom: -1px;
+}
+.borders {
+  background-color: #1f2027;
+  height: 10px;
+  width: 100%;
+  margin-bottom: 0px;
+}
+@media screen and (max-width: 1300px) {
   :root {
     --square-size: 50px;
   }
@@ -96,20 +123,48 @@ body {
     font-size: 30px !important;
   }
   #Attributes {
-    top: 120px;
-    right: 25% !important;
-  }
-  #misc {
-    margin-left: 10px;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-  }
-  #current {
-    margin-top: 10px;
+    top: 100px;
+    right: 20% !important;
   }
   .Reset {
-    height: 260px;
-    width: 50px;
+    width: 440px;
+    height: 50px;
+  }
+  #ResetT {
+    font-size: 1em;
+    letter-spacing: 2px;
+  }
+  .Stats {
+    height: 170px;
+    margin-top: 10px;
+    width: 45px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+}
+@media screen and (max-height: 500px) {
+  :root {
+    --square-size: 35px;
+  }
+  #Attributes {
+    right: 900px;
+    top: 50px;
+    left: 120px;
+  }
+  #att {
+    font-size: 25px !important;
+  }
+  .Reset { 
+    width:325px;
+    height: 40px;
+  }
+  #ResetT {
+    font-size: 1em;
+    letter-spacing: 2px;
+  }
+  .Stats {
+    height: 150px;
+    width: 40px;
   }
 }
